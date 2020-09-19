@@ -1,0 +1,220 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Anirban Raha's Portfolio</title>
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero"><h1><span>A</span>nirban <span>R</span>aha</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Skills</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>my name is<span></span></h1>
+        <h1>Anirban <span></span></h1>
+        <a href="{%static 'pdf/Resume.pdf'%}" type="button" class="cta" download>Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+  <!-- Service Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Sk<span>i</span>lls</h1>
+        <p>The following are the languages that I speak :-<br/>CODING: Python, C, Javascript, SQL, HTML and CSS<br/>NON-CODING: English, Bengali and Hindi</p>
+      </div>
+      <div class="service-bottom">
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Full-Stack Developer</h2>
+          <p>Tools: HTML - CSS - Vanilla Javascript - Bootstrap - Django - React JS - Node Js - SQL - Adobe Photoshop - Adobe Illustrator</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Python Developer</h2>
+          <p>Tools : Python and its various frameworks, modules and libraries such as OpenCV, Django, Flask, tkinter, pygames, kivy, et cetera.</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>Internet of Things</h2>
+          <p>Being an Electronics and Communication Engineer by training , how can I not be interested in IOT . Tools and platforms : Arduino , Raspbian , Flutter .</p>
+        </div>
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
+          <h2>UI / UX <br/>Designer</h2>
+          <p>Tools used for User Interface and User Experience Design : Adobe XD , Adobe Photoshop , Adobe Lightroom , Sketch , Figma .</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>E.D.I.T.H.</h1>
+            <h2>Voice Activated Desktop Assistant</h2>
+            <p>E.D.I.T.H. is a voice controlled desktop assistant made using Python . It can recognize speech commands and perform tasks accordingly . Various concepts such as webscraping , speech recognition , using of API's ,etc have gone into developing its many functions .</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'images/img-1.png' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Blogger's Place</h1>
+            <h2>A blogging website</h2>
+            <p>It is a fully functional blogging website made using HTML, CSS, Javascript, Bootstrap and Django. I have added features search as user registration, profile management, blog category management, like and comment systems, etc to the website . </p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'images/img-1.png' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Percentage Education</h1>
+            <h2>Official Website of Percentage Education Tutorials</h2>
+            <p>Its the official website for Percentage Education Tutorial Classes based in Kolkata, West Bengal . </p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'images/img-1.png' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Marketplace</h1>
+            <h2>An E-commerce Website</h2>
+            <p>An e-commerce website developed using Django and React. It is fully functional with features such as user account creation, item cart, purchasing items using Stripe, etc.</p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'images/img-1.png' %}" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>PyTetris</h1>
+            <h2>The Classic Game of Tetris</h2>
+            <p>The evergreen classic game of Tetris rebuilt using Python and its pygame module. Relive your childhood memories with this little classic two-dimensional desktop game . </p>
+          </div>
+          <div class="project-img">
+            <img src="{% static 'images/img-1.png' %}" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="{% static 'images/img-4.png' %}" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">About <span>me</span></h1>
+        <h2>ECE Engineer</h2>
+        <p>I'm quietly confident, naturally curious and have an eye for detail . Since beginning my journey as a web developer I've been perpetually working on improving my chops one design problem at a time .</p>
+        <a href="{%static 'pdf/Resume.pdf'%}" class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Contact <span>info</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+91 900 707 1302</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>anirbanraha08@gmail.com</h2>  
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Kolkata, West Bengal, India</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>A</span>nirban <span>R</span>aha</h1></div>
+      <h2>C | Python | HTML | CSS | JS</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/profile.php?id=100008141623624"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/anirban.r08/?hl=en"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://twitter.com/AnirbanRaha21"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/anirban-raha-a1b1361b1/"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://github.com/anirban-21"><img src="https://img.icons8.com/bubbles/100/000000/github.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 Anirban Raha. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="{% static 'js/app.js'%}"></script>
+</body>
+</html>
